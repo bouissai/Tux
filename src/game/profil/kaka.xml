@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profil>
+    <nom>kaka</nom>
+    <avatar/>
+    <anniversaire>2000-10-26</anniversaire>
+    <parties>
+        <partie date="2018-09-07" trouvé="83%">
+            <temps>20</temps>
+            <mot niveau="2">Brûler</mot>
+        </partie>
+    </parties>
+</profil>

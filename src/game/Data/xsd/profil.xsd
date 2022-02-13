@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+XML SCHEMA du document profil.xml qui correspond aux données sur le profil 
+d'un joueur TUX
+-->
+<xs:schema version="1.0"
+           xmlns="http://myGame/tux"   
+           targetNamespace="http://myGame/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:include schemaLocation="dico.xsd"/>
+    <!-- 
+    La racine profil contient les 4 éléments suivant
+    nom : string 
+    avatar : string (le nom du fichier de  l'image avatar)
+    anniversaire : date
+    parties : Parties (Parties est composé de plusieurs Partie)
+    -->
+    <xs:element name="profil" type="Profil"/>
+    <xs:complexType name="Profil">
+        <xs:sequence>
+            <xs:element name="nom" type="xs:string"></xs:element> 
+            <xs:element name="avatar" type="xs:string"></xs:element>
+            <xs:element name="anniversaire" type="xs:date"></xs:element>
+            <xs:element name="parties" type="Parties"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- 
+    Ce type Parties contient plusieurs élément partie de type Partie
+    Car des parties sont plusieurs partie.
+    -->
+    <xs:complexType name="Parties">
+        <xs:sequence>
+            <xs:element name="partie" type="Partie" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- 
+    Une Partie contient 
+    un attribut date de type date qui correspond à la date de cette partie. 
+    Ainsi que 2 élément : 
+    le "temps" de la partie : double
+    le "mot" de la partie : string  (avec un attribut niveau)
+    -->
+    <xs:complexType name="Partie">
+        <xs:sequence>
+            <xs:element name="temps" type="xs:double" minOccurs="0"></xs:element>
+            <xs:element name="mot" type="MotNiveauType"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="date" type="xs:date" use="required"></xs:attribute>
+        <xs:attribute name="trouvé" type="xs:string" ></xs:attribute>
+    </xs:complexType>
+    
+    <!-- 
+    Ce type Mot contient  un attribut niveau de type int restreint entre
+    1 et 5 ainsi qu'une valeur de type string 
+    (le niveau du mot correspond a la difficultés du mot
+    -->         
+            
+</xs:schema>

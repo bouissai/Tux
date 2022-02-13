@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+XML SCHEMA du document hi-scores.xml qui correspond aux 
+10 meilleurs scores du jeu
+-->
+
+<xs:schema version="1.0"
+           xmlns="http://myGame/tux"
+           targetNamespace="http://myGame/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="scores" type="Scores"/>
+    <xs:complexType name="Scores">
+        <xs:sequence>
+            <xs:element name="score" type="xs:double" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

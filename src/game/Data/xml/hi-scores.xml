@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Document   : dico.xml
+    Author     : BOUISSA Ilyass / CRIVOI Dmtrii
+    Description: Données des 10 meilleures scores du jeu
+-->
+<scores xmlns="http://myGame/tux" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux ../xsd/hi-scores.xsd">
+    <score>75</score>
+    <score>60</score>
+    <score>60</score>
+    <score>50</score>
+    <score>50</score>
+    <score>44</score>
+    <score>44</score>
+    <score>40</score>
+    <score>38</score>
+    <score>37</score>
+</scores>

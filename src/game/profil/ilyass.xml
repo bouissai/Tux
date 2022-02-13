@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profil>
+    <nom>ilyass</nom>
+    <avatar/>
+    <anniversaire>2000-10-26</anniversaire>
+    <parties>
+        <partie date="2018-09-07" trouvé="0%">
+            <temps>9</temps>
+            <mot niveau="4">Sarbacane</mot>
+        </partie>
+        <partie date="2018-09-07" trouvé="100%">
+            <temps>11</temps>
+            <mot niveau="4">Sarbacane</mot>
+        </partie>
+    </parties>
+</profil>

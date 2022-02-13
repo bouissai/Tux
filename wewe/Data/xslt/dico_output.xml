@@ -1,0 +1,46 @@
+<html xmlns:tux="http://myGame/tux">
+    <body>
+        <h2>My CD Collection</h2>
+        <table border="1">
+            <tr bgcolor="#9acd32">
+                <th>Mot</th><th>Niveau</th>
+            </tr>
+            <tr>
+                <td>Amygdales</td><td>5</td>
+            </tr>
+            <tr>
+                <td>Angleterre</td><td>5</td>
+            </tr>
+            <tr>
+                <td>Br&ucirc;ler</td><td>2</td>
+            </tr>
+            <tr>
+                <td>Cle</td><td>1</td>
+            </tr>
+            <tr>
+                <td>Colonne</td><td>3</td>
+            </tr>
+            <tr>
+                <td>Indice</td><td>2</td>
+            </tr>
+            <tr>
+                <td>Oasis</td><td>2</td>
+            </tr>
+            <tr>
+                <td>Question</td><td>3</td>
+            </tr>
+            <tr>
+                <td>Rival</td><td>2</td>
+            </tr>
+            <tr>
+                <td>Roue</td><td>2</td>
+            </tr>
+            <tr>
+                <td>Sarbacane</td><td>4</td>
+            </tr>
+            <tr>
+                <td>Vert</td><td>1</td>
+            </tr>
+        </table>
+    </body>
+</html>
